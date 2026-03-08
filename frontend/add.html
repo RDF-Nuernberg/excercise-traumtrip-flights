@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Flight - Traumtrip</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Add New Flight</h1>
+            <a href="index.html" class="btn btn-secondary">Back to Flights</a>
+        </div>
+
+        <div id="error" class="error" style="display: none;"></div>
+        <div id="success" class="success" style="display: none;"></div>
+
+        <form id="add-flight-form">
+            <div class="form-group">
+                <label for="startflughafen">Start Airport *</label>
+                <select id="startflughafen" name="Startflughafen" required>
+                    <option value="">Loading...</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="zielflughafen">Destination Airport *</label>
+                <select id="zielflughafen" name="Zielflughafen" required>
+                    <option value="">Loading...</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="abflugdatum">Departure Date *</label>
+                <input type="date" id="abflugdatum" name="Abflugdatum" required>
+            </div>
+
+            <div class="form-group">
+                <label for="preis">Price (€) *</label>
+                <input type="number" id="preis" name="Preis" step="0.01" min="0" required>
+            </div>
+
+            <div class="form-group">
+                <label for="dauer">Duration (hours) *</label>
+                <input type="number" id="dauer" name="Dauer_in_Stunden" step="0.1" min="0" required>
+            </div>
+
+            <div class="form-group">
+                <label for="fluggesellschaft">Airline</label>
+                <select id="fluggesellschaft" name="fluggesellschaft">
+                    <option value="">Loading...</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="flugzeugtyp">Aircraft Type *</label>
+                <select id="flugzeugtyp" name="Flugzeugtyp" required>
+                    <option value="">Loading...</option>
+                </select>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="btn btn-primary">Add Flight</button>
+                <a href="index.html" class="btn btn-secondary">Cancel</a>
+            </div>
+        </form>
+    </div>
+
+    <script src="add.js"></script>
+</body>
+
+</html>
