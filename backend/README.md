@@ -4,6 +4,8 @@ Hier befindet sich das Backend für die Platform von Traumtripp Flugreisen.
 
 ## Setup
 
+### Abhängigkeiten installieren
+
 Das Projekt nutzt den python manager `uv` für die Verwaltung von Abhängigkeiten.
 Es werden die Pakete  `flask` und `flask-cors` wie in der `project.toml` angegeben benötigt.
 
@@ -13,6 +15,7 @@ Um die Virtuelle Umgebung zu initialisieren müssen sie im Backend Ordner den Be
 cd backend
 uv sync
 ```
+### Backend starten
 
 Die `main.py` enthält schon den minimalen Boilerplate Code um das Flask-Backend zu starten. 
 Führen Sie dazu die `main.py` aus. Anschließend startet der Server unter dem Port `5000` wie auf der Console angegeben.
@@ -20,13 +23,20 @@ Führen Sie dazu die `main.py` aus. Anschließend startet der Server unter dem P
 ```sh
 uv run main.py
 ```
+### Datenbank zurücksetzen
+
+Die sqlite Datenbank ist schon unter `traumtrip.db` vorhanden und kann direkt verwendet werden.
+Wollen Sie Datenbank auf den Anfangszustand zurücksetzten können Sie die Datei löschen und mittels folgendem Befehl neu erzeugen.
+
+```sh
+sqlite3 traumtrip.db -init sqlite.sql
+```
 
 ## Aufgabe 
 
 Implementieren Sie die API-Endpunkte wie in der Aufgabenstellung angegeben.
 
 In der Datei `sql_statements.py` befinden Sie alle SQL Statements welche für den Zugriff auf die Datenbank notwendig ist. Diese wurde bereits in der `main.py` importiert.
-
 
 
 ### Lösungshinweise
