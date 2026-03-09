@@ -4,39 +4,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Traumtrip - Flights</title>
+    <title>Traumtrip - Dashboard</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>Traumtrip Flights</h1>
-            <a href="add.html" class="btn btn-primary">Add New Flight</a>
-        </div>
+    <main class="container">
+        <header class="dashboard-header">
+            <h1>🌍 Traumtrip Dashboard</h1>
+            <p>Welcome to the Travel Management System</p>
+        </header>
 
-        <div id="loading">Loading flights...</div>
-        <div id="error" class="error" style="display: none;"></div>
+        <section class="dashboard-grid">
+            <!-- Flights -->
+            <a href="flights.html" class="dashboard-card flights">
+                <span class="card-icon">✈️</span>
+                <span class="card-title">Flights</span>
+                <span class="card-description">View and manage all flights</span>
+                <span class="card-badge">Active</span>
+            </a>
 
-        <table id="flights-table" style="display: none;">
-            <thead>
-                <tr>
-                    <th>Flight ID</th>
-                    <th>Start Airport</th>
-                    <th>Destination Airport</th>
-                    <th>Departure Date</th>
-                    <th>Price (€)</th>
-                    <th>Duration (h)</th>
-                    <th>Airline</th>
-                    <th>Aircraft Type</th>
-                </tr>
-            </thead>
-            <tbody id="flights-body">
-            </tbody>
-        </table>
-    </div>
+            <!-- Bookings -->
+            <a href="bookings.html" class="dashboard-card bookings">
+                <span class="card-icon">📋</span>
+                <span class="card-title">Bookings</span>
+                <span class="card-description">Manage customer bookings</span>
+                <span class="card-badge">Coming Soon</span>
+            </a>
 
-    <script src="flights.js"></script>
+            <!-- Customers -->
+            <a href="customers.html" class="dashboard-card customers">
+                <span class="card-icon">👥</span>
+                <span class="card-title">Customers</span>
+                <span class="card-description">View and manage customers</span>
+                <span class="card-badge">Coming Soon</span>
+            </a>
+
+            <!-- Employees -->
+            <a href="employees.html" class="dashboard-card employees">
+                <span class="card-icon">👔</span>
+                <span class="card-title">Employees</span>
+                <span class="card-description">Manage employee records</span>
+                <span class="card-badge">Coming Soon</span>
+            </a>
+
+            <!-- Airports -->
+            <a href="airports.html" class="dashboard-card airports">
+                <span class="card-icon">🛫</span>
+                <span class="card-title">Airports</span>
+                <span class="card-description">View airport information</span>
+                <span class="card-badge">Coming Soon</span>
+            </a>
+
+            <!-- Airlines -->
+            <a href="airlines.html" class="dashboard-card airlines">
+                <span class="card-icon">🛩️</span>
+                <span class="card-title">Airlines</span>
+                <span class="card-description">Manage airline partners</span>
+                <span class="card-badge">Coming Soon</span>
+            </a>
+
+            <!-- Aircraft Types -->
+            <a href="aircraft.html" class="dashboard-card aircraft">
+                <span class="card-icon">🛬</span>
+                <span class="card-title">Aircraft Types</span>
+                <span class="card-description">View aircraft specifications</span>
+                <span class="card-badge">Coming Soon</span>
+            </a>
+        </section>
+    </main>
 </body>
 
 </html>

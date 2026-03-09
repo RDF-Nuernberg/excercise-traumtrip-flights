@@ -24,3 +24,4 @@ Einfaches Web frontend um alle Flüge aus der Traumtrip datenbank anzuzeigen, so
 Der HTML und CSS part ist bereits fertig. 
 
 Implementieren Sie die Logik zur Abfrage und Anzeige der Daten in den entsprechenden Javascript Dateien, wie in der Aufgabenstellung angegeben.
+Falls nicht vorhanden müssen diese noch angelegt werden.

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Airport - Traumtrip</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main class="container">
+        <header class="header">
+            <h1>Add New Airport</h1>
+            <nav>
+                <a href="airports.html" class="btn btn-secondary">Back to Airports</a>
+            </nav>
+        </header>
+
+        <div id="error" class="error" style="display: none;"></div>
+        <div id="success" class="success" style="display: none;"></div>
+
+        <form id="add-airport-form">
+            <div class="form-group">
+                <label for="bezeichnung">Airport Name *</label>
+                <input type="text" id="bezeichnung" name="Bezeichnung_Flughafen" required>
+            </div>
+
+            <div class="form-group">
+                <label for="land">Country *</label>
+                <select id="land" name="Land" required>
+                    <option value="">Select a country...</option>
+                </select>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="btn btn-primary">Add Airport</button>
+                <a href="airports.html" class="btn btn-secondary">Cancel</a>
+            </div>
+        </form>
+    </main>
+
+    <script src="add-airport.js"></script>
+</body>
+
+</html>

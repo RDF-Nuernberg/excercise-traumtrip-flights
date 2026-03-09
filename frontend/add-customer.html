@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Customer - Traumtrip</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main class="container">
+        <header class="header">
+            <h1>Add New Customer</h1>
+            <nav>
+                <a href="customers.html" class="btn btn-secondary">Back to Customers</a>
+            </nav>
+        </header>
+
+        <div id="error" class="error" style="display: none;"></div>
+        <div id="success" class="success" style="display: none;"></div>
+
+        <form id="add-customer-form">
+            <div class="form-group">
+                <label for="anrede">Salutation *</label>
+                <select id="anrede" name="IDAnrede" required>
+                    <option value="">Select salutation...</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="titel">Title</label>
+                <input type="text" id="titel" name="Titel" placeholder="Dr., Prof., etc.">
+            </div>
+
+            <div class="form-group">
+                <label for="vorname">First Name *</label>
+                <input type="text" id="vorname" name="Vorname" required>
+            </div>
+
+            <div class="form-group">
+                <label for="name">Last Name *</label>
+                <input type="text" id="name" name="Name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="strasse">Street *</label>
+                <input type="text" id="strasse" name="Straße" required>
+            </div>
+
+            <div class="form-group">
+                <label for="hausnummer">House Number *</label>
+                <input type="text" id="hausnummer" name="Hausnummer" required>
+            </div>
+
+            <div class="form-group">
+                <label for="plz">Postal Code *</label>
+                <input type="number" id="plz" name="PLZ" required>
+            </div>
+
+            <div class="form-group">
+                <label for="telefon">Phone *</label>
+                <input type="tel" id="telefon" name="Telefon" required>
+            </div>
+
+            <div class="form-group">
+                <label for="geburtsdatum">Date of Birth *</label>
+                <input type="date" id="geburtsdatum" name="Geburtsdatum" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="Email">
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="btn btn-primary">Add Customer</button>
+                <a href="customers.html" class="btn btn-secondary">Cancel</a>
+            </div>
+        </form>
+    </main>
+
+    <script src="add-customer.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Booking - Traumtrip</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main class="container">
+        <header class="header">
+            <h1>Add New Booking</h1>
+            <nav>
+                <a href="bookings.html" class="btn btn-secondary">Back to Bookings</a>
+            </nav>
+        </header>
+
+        <div id="error" class="error" style="display: none;"></div>
+        <div id="success" class="success" style="display: none;"></div>
+
+        <form id="add-booking-form">
+            <div class="form-group">
+                <label for="kunde">Customer *</label>
+                <select id="kunde" name="IDKunde" required>
+                    <option value="">Select a customer...</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="buchungsdatum">Booking Date *</label>
+                <input type="datetime-local" id="buchungsdatum" name="Buchungsdatum" required>
+            </div>
+
+            <div class="form-group">
+                <label for="mitarbeiter">Sales Employee *</label>
+                <select id="mitarbeiter" name="MitarbeiterDerDenFlugVerkauftHat" required>
+                    <option value="">Select an employee...</option>
+                </select>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="btn btn-primary">Add Booking</button>
+                <a href="bookings.html" class="btn btn-secondary">Cancel</a>
+            </div>
+        </form>
+    </main>
+
+    <script src="add-booking.js"></script>
+</body>
+
+</html>
