@@ -33,6 +33,25 @@ SQL_SELECT_ALL_FLIGHTS = """
     ORDER BY IDflug
 """
 
+SQL_SELECT_ALL_FLIGHTS_WITH_NAMES = """
+    SELECT
+        f.IDflug,
+        sf.Bezeichnung_Flughafen AS Startflughafen,
+        zf.Bezeichnung_Flughafen AS Zielflughafen,
+        f.Abflugdatum,
+        f.Preis,
+        f.Dauer_in_Stunden,
+        fg.Name_Fluggesellschaft AS fluggesellschaft,
+        ft.Typenbezeichnung AS Flugzeugtyp
+    FROM flug f
+    LEFT JOIN flughafen sf ON f.Startflughafen = sf.ID_Flughafen
+    LEFT JOIN flughafen zf ON f.Zielflughafen = zf.ID_Flughafen
+    LEFT JOIN fluggesellschaft fg ON f.fluggesellschaft = fg.IDFluggesellschaft
+    LEFT JOIN flugzeugtyp ft ON f.Flugzeugtyp = ft.IDFlugzeugtyp
+    ORDER BY f.IDflug
+"""
+
+
 SQL_INSERT_FLIGHT = """
     INSERT INTO flug (
         Startflughafen,
