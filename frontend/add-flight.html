@@ -23,43 +23,43 @@
         <form id="add-flight-form">
             <div class="form-group">
                 <label for="startflughafen">Start Airport *</label>
-                <select id="startflughafen" name="Startflughafen" required>
+                <select id="startflughafen" name="Startflughafen" >
                     <option value="">Loading...</option>
                 </select>
             </div>
 
             <div class="form-group">
                 <label for="zielflughafen">Destination Airport *</label>
-                <select id="zielflughafen" name="Zielflughafen" required>
+                <select id="zielflughafen" name="Zielflughafen" >
                     <option value="">Loading...</option>
                 </select>
             </div>
 
             <div class="form-group">
                 <label for="abflugdatum">Departure Date *</label>
-                <input type="date" id="abflugdatum" name="Abflugdatum" required>
+                <input type="date" id="abflugdatum" name="Abflugdatum" >
             </div>
 
             <div class="form-group">
                 <label for="preis">Price (€) *</label>
-                <input type="number" id="preis" name="Preis" step="0.01" min="0" required>
+                <input type="number" id="preis" name="Preis" step="0.01" min="0" >
             </div>
 
             <div class="form-group">
                 <label for="dauer">Duration (hours) *</label>
-                <input type="number" id="dauer" name="Dauer_in_Stunden" step="0.1" min="0" required>
+                <input type="number" id="dauer" name="Dauer_in_Stunden" step="0.1" min="0" >
             </div>
 
             <div class="form-group">
-                <label for="fluggesellschaft">Airline</label>
-                <select id="fluggesellschaft" name="fluggesellschaft">
+                <label for="fluggesellschaft">Airline *</label>
+                <select id="fluggesellschaft" name="fluggesellschaft" >
                     <option value="">Loading...</option>
                 </select>
             </div>
 
             <div class="form-group">
                 <label for="flugzeugtyp">Aircraft Type *</label>
-                <select id="flugzeugtyp" name="Flugzeugtyp" required>
+                <select id="flugzeugtyp" name="Flugzeugtyp" >
                     <option value="">Loading...</option>
                 </select>
             </div>
@@ -71,7 +71,7 @@
         </form>
     </main>
 
-    <script src="add.js"></script>
+    <script src="add-flight.js"></script>
 </body>
 
 </html>
