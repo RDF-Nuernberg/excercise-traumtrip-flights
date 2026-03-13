@@ -25,6 +25,22 @@ def get_connection() -> sqlite3.Connection:
 
 # TODO: Implement the missing routes:
 
+@app.get("/api/bookings")
+def list_bookings():
+    pass
+
+@app.get("/api/customers")
+def list_customers():
+    pass
+
+@app.get("/api/employees")
+def list_employees():
+    pass
+
+@app.post("/api/bookings")
+def save_booking():
+    pass
+
 
 
 if __name__ == "__main__":
